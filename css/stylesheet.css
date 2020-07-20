@@ -1,0 +1,50 @@
+body
+{
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+#title.container-fluid
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.appinfo-content .container-fluid
+{
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#button-start.container-fluid
+{
+  position: absolute;
+  bottom: 30px;
+}
+
+.btn
+{
+  width: 150px;
+}
+
+
+
+#button-marker.container-fluid
+{
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+}
+
+#button-loc.container-fluid
+{
+  position: absolute;
+  padding: 10px;
+  top: 60%;
+}
