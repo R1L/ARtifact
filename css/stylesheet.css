@@ -11,31 +11,34 @@ h1
   padding: 20px 10px 10px 10px;
 }
 
-h1.index
-{
-  padding: 0px 0px 0px 0px;
-  font-size: 55px;
-}
-
 p
 {
   color:#403d39;
   text-align: center;
 }
 
-img
+}
+#title.container-fluid
 {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
-.app-content .container-fluid
+.appinfo-content .container-fluid
 {
   position: absolute;
   top:40%;
   left:50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+#button-start.container-fluid
+{
+  position: absolute;
+  bottom: 30px;
 }
 
 .btn
@@ -64,12 +67,6 @@ img
   border: 2px solid #CB7A01 !important;
 }
 
-#button-main.container-fluid
-{
-  position: absolute;
-  bottom: 10px;
-}
-
 #button-marker.container-fluid
 {
   position: absolute;
@@ -82,4 +79,10 @@ img
   position: absolute;
   padding: 10px;
   top: 60%;
+}
+
+img
+{
+  width: 100%;
+  height: auto;
 }

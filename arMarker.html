@@ -1,18 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-    <!-- we import arjs version without NFT but with marker + location based support -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-    <body style="margin : 0px; overflow: hidden;">
-        <a-scene embedded arjs>
-        <a-marker preset="hiro">
-            <a-entity
-            position="0 -1 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-            ></a-entity>
+  <head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>ARtifact - Marker</title>
+    <!-- MDB css file for animation -->
+    <link rel="stylesheet" href="css/mdb.min.css"/>
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google fonts file for Ubuntu font -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link rel="stylesheet" href="css/stylesheet.css"/>
+  </head>
+  <!-- JS files for AR.js -->
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+  <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+  <!-- Gesture detector&handler JS files Credit to fcor on GitHub. Can be found here: https://github.com/fcor/arjs-gestures  -->
+  <script src="js/gesture-detector.js"></script>
+  <script src="js/gesture-handler.js"></script>
+  <!-- JS file to get click event on model -->
+  <script src="js/click-event.js"></script>
+
+
+  <body style='margin : 0px; overflow: hidden;'>
+
+    <section id="myModal" class="modal">
+           <div class="close-container">
+               <img class="close" src="assets/svg/close/close-background.svg" alt="close" />
+           </div>
+
+           <div class="modal-content">
+               <div class="modal-header" id="modal-header"></div>
+               <div class="modal-body" id="data"></div>
+               <div class="modal-footer">
+                   <button id="next" class="button-small">Next</button>
+                   <img class="close" src="assets/svg/close/close-outline.svg" alt="close" />
+               </div>
+           </div>
+       </section>
+
+
+      <!-- Start of scene -->
+     <a-scene Debug vr-mode-ui="enabled: false" embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="colorManagement: true" gesture-detector>
+       <!-- Assest initialiser -->
+      <a-assets>
+          <!-- Pot model Credit to marvelmaster on Sketchfab. Can be found here https://sketchfab.com/3d-models/legend-of-zelda-ocarina-of-time-pot-5667b24a35914837a013a70316e1a6a6 -->
+          <a-asset-items id="pot" src="assets/models/pot/pot.gltf"></a-asset-items>
+          <!-- Statue model Credit to doppelgangerer on Sketchfab. Can be found here https://sketchfab.com/3d-models/egyptian-ka-statue-low-poly-e046bd93099d43038ce5c3b878c0b391  -->
+          <a-asset-items id="statue" src="assets/models/statue/statue.gltf"></a-asset-items>
+          <!-- Cat model Credit to vicente betoret ferrero on Sketchfab. Can be found here https://sketchfab.com/3d-models/egyptian-sculpture-cat-photogrammetry-f1c2824a271e4a9d8c587fdc7e9eaa0a  -->
+          <a-asset-items id="cat" src="assets/models/cat/cat.gltf"></a-asset-items>
+      </a-assets>
+
+      <!-- Camera initialiser -->
+      <a-marker-camera>
+        <!-- Marker 1 -->
+        <a-marker click-event emitevents="true" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse"  id="marker1" value="pot"  preset="custom" type="pattern" url="assets/Marker1.patt">
+          <a-entity gesture-handler class="clickable" gltf-model="#pot"></a-entity>
         </a-marker>
-        <a-entity camera></a-entity>
-        </a-scene>
-    </body>
+
+        <!-- Marker 2 -->
+        <a-marker click-event emitevents="true" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse" id="marker2" value="statue" preset="custom" type="pattern" url="assets/Marker2.patt">
+          <a-entity gesture-handler class="clickable" gltf-model="#statue"></a-entity>
+        </a-marker>
+
+        <!-- Marker 3 -->
+        <a-marker click-event emitevents="true" raycaster="objects: .clickable" cursor="fuse: false; rayOrigin: mouse"  id="marker3" value="cat" preset"custom" type="pattern" url="assets/Marker3.patt">
+          <a-entity gesture-handler class="clickable" gltf-model="#cat"></a-entity>
+        </a-marker>
+      </a-marker-camera>
+
+    </a-scene>
+  </body>
 </html>

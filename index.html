@@ -1,48 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!-- MDB css file for animation -->
 <link rel="stylesheet" href="css/mdb.min.css"/>
+<!-- Bootstrap css file -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- Google fonts file for Ubuntu font -->
 <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
 <link rel="stylesheet" href="css/stylesheet.css"/>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ARtifact</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ARtifact</title>
+</head>
+<body>
 
-    <div class="app-content">
-      <!-- Welcome message -->
-      <div class="container-fluid animated fadeIn delay-1s">
-        <div class="row">
-          <div class="mx-auto animated fadeOut delay-2s">
-            <h1 class="index">Welcome To</h1>
-          </div>
-        </div>
-      </div>
-
-      <!-- Title/Project Name  -->
-      <div class="container-fluid animated fadeIn delay-4s">
-        <div class="row">
-          <div class="mx-auto text">
-            <h1 class="index">ARtifact</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Start Button -->
-    <div id="button-main" class="container-fluid animated fadeInUp delay-5s">
+  <div class="app-content">
+  <!-- Welcome message -->
+    <div class="container-fluid animated fadeIn delay-1s">
       <div class="row">
-        <div class="mx-auto">
-          <a type="button" class="btn btn-dark" onclick="bys(); $('.text').addClass('animated fadeOutLeft'); $('.btn').addClass('animated fadeOutDown')" >Start</a>
+        <div class="mx-auto animated fadeOut delay-2s">
+          <h1 class="index">Welcome To</h1>
         </div>
       </div>
     </div>
 
-    <script src="js/button-delay.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  </body>
+<!-- Title/Project Name  -->
+    <div class="container-fluid animated fadeIn delay-4s">
+      <div class="row">
+        <div class="mx-auto text">
+          <h1 class="index">ARtifact</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Start Button -->
+<div id="button-main" class="container-fluid animated fadeInUp delay-5s">
+  <div class="row">
+    <div class="mx-auto">
+      <a type="button" class="btn btn-dark" onclick="bys(); $('.text').addClass('animated fadeOutLeft'); $('.btn').addClass('animated fadeOutDown')" >Start</a>
+    </div>
+  </div>
+</div>
+<!-- Adds delay to page change -->
+<script src="js/button-delay.js"></script>
+<!-- Bootstrap JS Files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
 </html>

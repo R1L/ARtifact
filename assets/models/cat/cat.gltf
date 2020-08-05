@@ -1,0 +1,160 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Group37191_01 - Default_0",
+            "rotation" : [
+                0,
+                0,
+                -0.9999579191207886,
+                0.00918001588433981
+            ],
+            "scale" : [
+                0.07676549255847931,
+                0.07676548510789871,
+                0.07676549255847931
+            ],
+            "translation" : [
+                0.4220566153526306,
+                0.9077279567718506,
+                -0.5475643873214722
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "01_-_Default",
+            "normalTexture" : {
+                "index" : 0,
+                "texCoord" : 0
+            },
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 1,
+                "roughnessFactor" : 0.33000001311302185
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Group37191_01 - Default_0",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        },
+        {
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "01_-_Default_normal",
+            "uri" : "textures/01_-_Default_normal.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "01_-_Default_baseColor",
+            "uri" : "textures/01_-_Default_baseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1431,
+            "max" : [
+                8.051149368286133,
+                10.923430442810059,
+                12.743998527526855
+            ],
+            "min" : [
+                0.8150466084480286,
+                -11.277100563049316,
+                0.5367931723594666
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1431,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1431,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 7632,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 17172,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17172,
+            "byteOffset" : 17172
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 11448,
+            "byteOffset" : 34344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 15264,
+            "byteOffset" : 45792
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 61056,
+            "uri" : "cat.bin"
+        }
+    ]
+}

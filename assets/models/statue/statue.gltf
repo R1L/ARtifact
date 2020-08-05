@@ -1,0 +1,151 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "default"
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "input.obj"
+        },
+        {
+            "mesh" : 0,
+            "name" : "polySurface32",
+            "scale" : [
+                0.012000000104308128,
+                0.012000000104308128,
+                0.012000000104308128
+            ],
+            "translation" : [
+                0,
+                1.2666445970535278,
+                0
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "default",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 1
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "polySurface32_1",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "kastatue_BaseColor",
+            "uri" : "textures/kastatue_BaseColor.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2589,
+            "max" : [
+                27.794824600219727,
+                71.50713348388672,
+                39.34943389892578
+            ],
+            "min" : [
+                -27.85248565673828,
+                -102.82534790039062,
+                -49.3440055847168
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2589,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2589,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 10614,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 31068,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 31068,
+            "byteOffset" : 31068
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 20712,
+            "byteOffset" : 62136
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 21228,
+            "byteOffset" : 82848
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 104076,
+            "uri" : "statue.bin"
+        }
+    ]
+}
